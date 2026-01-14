@@ -1,0 +1,7 @@
+# Supabase Configuration
+NEXT_PUBLIC_SUPABASE_URL=https://hkhvojtypqacjicwrdex.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhraHZvanR5cHFhY2ppY3dyZGV4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc4NjA3NjEsImV4cCI6MjA4MzQzNjc2MX0.AfAhxWWTBwUcxQsHIZQGvCXt1aTZr0RSXE5CI3qGJy8
+
+# App Configuration
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
