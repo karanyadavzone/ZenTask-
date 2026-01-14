@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import BottomNav from '@/components/layout/BottomNav'
 import { AuthProvider } from '@/lib/auth'
+import { ThemeProvider } from '@/lib/theme'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -41,15 +42,17 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </head>
-      <body className="font-sans bg-gradient-to-br from-slate-50 to-blue-50 text-gray-900 antialiased">
-        <AuthProvider>
-          <div className="min-h-screen pb-16">
-            <main className="max-w-md mx-auto">
-              {children}
-            </main>
-            <BottomNav />
-          </div>
-        </AuthProvider>
+      <body className="font-sans bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100 antialiased">
+        <ThemeProvider>
+          <AuthProvider>
+            <div className="min-h-screen pb-16">
+              <main className="max-w-md mx-auto">
+                {children}
+              </main>
+              <BottomNav />
+            </div>
+          </AuthProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

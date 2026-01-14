@@ -229,6 +229,7 @@ export default function HomePage() {
     })
   })
 
+
   const completedCount = tasks.filter(task => task.status === 'completed').length
   const todoCount = tasks.filter(task => task.status === 'todo').length
   const inReviewCount = tasks.filter(task => task.status === 'in_progress').length

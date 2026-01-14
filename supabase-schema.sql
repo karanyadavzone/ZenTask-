@@ -273,3 +273,4 @@ CREATE TRIGGER on_auth_user_created
 -- ✅ Automatic profile creation
 -- ✅ Updated_at triggers
 
+
