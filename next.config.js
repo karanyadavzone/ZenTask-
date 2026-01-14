@@ -22,6 +22,13 @@ const nextConfig = {
   compress: true,
   // Optimize bundle
   swcMinify: true,
+  // Production optimizations
+  reactStrictMode: true,
+  // Handle environment variables
+  env: {
+    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+  },
 }
 
 module.exports = nextConfig
